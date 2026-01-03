@@ -1,0 +1,62 @@
+# -------- OS / Editor --------
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+
+# -------- Java --------
+target/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# -------- Python --------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# -------- ML / Data --------
+data/
+datasets/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.joblib
+checkpoints/
+models/
+training/output/
+
+# Allow small example model if needed
+!training/model_artifacts/example_model.json
+
+# -------- Build / Docker --------
+*.log
+docker-compose.override.yml
+
+# -------- GCP --------
+*.json
+.gcloud/
+credentials/
+service-account*.json
+
+# -------- Terraform / IaC (if added later) --------
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+
+# -------- Testing --------
+coverage/
+*.coverage
+.pytest_cache/
+
